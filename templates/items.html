@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block content %}
+<div>
+  {% for i in items %}
+    <h2>{{i.item_name}}</h2>
+  {% endfor %}
+<div>
+
+{% endblock %}

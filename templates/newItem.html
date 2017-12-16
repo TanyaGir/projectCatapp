@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+   <h2> Add New {{ catalogitem.name }} Item</h2>
+   <div row = "col-md-12">
+     <form action="{{url_for('newItem',category_id=category_id)}}" method ='POST'>
+       <p>Add Item</p>
+       <input type ='text'size ='30' name='name'>
+       <p>Item Description</p>
+       <input type ='text'size ='30' name='description'>
+       <input type='submit' value='Create'>
+     </form>
+   </div>
+{% endblock %}

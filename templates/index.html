@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <div class = "row">
+      <div class ="col-md-6" style="border: 1px solid black;">Categories</div>
+      <div class ="col-md-6" style="border: 1px solid black;">Latest Items</div>
+    </div>
+    <div class = "row" style="border: 1px solid black;">
+      <div class = "col-md-6">
+        {% for category in categories %}
+          <h2>{{category}}</h2>
+        {% endfor %}
+      </div>
+      <div class ="col-md-6" style="border: 1px solid black;">
+        {% for item in items%}
+          <h2>{{item}}</h2>
+        {% endfor %}
+      </div>
+{% endblock %}
